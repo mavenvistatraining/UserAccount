@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registration Form for User</title>
+    <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <script src="registration_form.js" type="text/javascript"></script>
+    <script src="jquery-1.7.2.min.js" type="text/javascript"></script>
+    <style> 
+      #sigin{
+          width: 35%;
+          height: 50%;
+      }
+    </style>
+  </head>
+
+  <body>    
+    <div class="container" id="sigin">
+      <form class="form-signin" method="post" enctype="multipart/form-data">
+        <h2 class="form-signin-heading">Add Students Information</h2>
+        <input type="text" class="form-control" placeholder="First Name" name="fname" id="fname">
+        <input type="text" class="form-control" placeholder="Last Name" name="lname" id="lname">
+        <input type="text" class="form-control" placeholder="User ID" name="user_id" id="user_id">
+        <input type="password" class="form-control" placeholder="Password" name="password" id="password">
+        <br>
+        <input class="btn btn-lg btn-primary btn-block" type="button" value="submit" onclick="registeration_details();">
+      </form>
+    </div> 
+  </body>
+</html>

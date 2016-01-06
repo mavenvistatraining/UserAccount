@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Signin Template for Bootstrap</title>
+    <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <script src="registration_form.js" type="text/javascript"></script>
+    <script src="jquery-1.7.2.min.js" type="text/javascript"></script>
+    
+    <style>
+      #sigin{
+          width: 25%;
+          height: 50%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container" id="sigin">
+      <form class="form-signin" method="post" enctype="multipart/form-data">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <input type="text" class="form-control" placeholder="User ID" name="username" id="username" autofocus>
+        <input type="password" class="form-control" placeholder="Password" name="password" id="password"> <br>
+        
+        <input class="btn btn-lg btn-primary btn-block" type="button" value="Sign in" onclick="sign_in();">
+        <br>
+        <a href="">Forget Password</a> 
+      </form>
+    </div> 
+  </body>
+</html>
