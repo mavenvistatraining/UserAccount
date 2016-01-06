@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/user.js"></script>
+    </head>
+    <body>
+        <div style="float:left;">
+            <span style="font-size:28px;font-weight:600;">MavenVista</span>
+        </div>
+        <div style="float:right;">
+            <form method="post" name="login_form" onsubmit="return login_details(this)">
+                Email ID <input type="email" name="uname" required> 
+                Password <input type="password" name="pass" required>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+        <br>
+        <hr style="clear:both;">
+        <div style="width:350px;float:right;margin-right:50px;">
+            <div>
+                <h3>Registration Form</h3>
+                <hr>
+                <form method="post" name="register_form" onsubmit="return submit_register_details(this)">
+                <table width="100%" cellpadding="5px">
+                    <tr>
+                        <td>
+                            First Name
+                        </td>
+                        <td>
+                            <input type="text" name="fname" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Last Name
+                        </td>
+                        <td>
+                            <input type="text" name="lname" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Email
+                        </td>
+                        <td>
+                            <input type="email" name="email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Password
+                        </td>
+                        <td>
+                            <input type="password" name="passwd" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" colspan="2">
+                            <span style="color:blue;cursor: pointer;" onclick="forgot_password();">Forget Password</span>&nbsp;&nbsp;&nbsp;
+                            <input type="submit" value="Register">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div style="width:350px;float:left;">
+            <br><br>
+            <b>Registration Input</b>
+            <textarea id="register_data" rows="7" cols="70">
+                {
+                    "firstname" : "nirav",
+                    "lastname"  : "sadhu",
+                    "emailid"   : "sadhunirav007@gmail.com",
+                    "password"  : "123456"
+                }
+            </textarea>
+            <input type="button" value="Register" onclick="submit_register_details_api()">
+                
+            <br><br>
+            <b>Login Input</b>
+            <textarea id="login_data" rows="4" cols="70">
+                {
+                    "username" : "sadhunirav007@gmail.com",
+                    "password"  : "123456"
+                }
+            </textarea>
+            <input type="button" value="Login" onclick="login_details_api()">
+        </div>
+    </body>
+</html>
